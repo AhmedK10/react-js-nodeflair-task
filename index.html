@@ -1,31 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="src/styles.css">
-  <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="src/App.css"> -->
+  <!-- <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NodeFlair Jobs | #1 Tech Job Portal in Asia</title>
 </head>
 <body>
-  <div id="root"></div>
   <!-- Import React -->
   <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
   <!-- Import ReactDOM -->
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
-  <!-- Import Babel (optional, for JSX support)
-  <script src="https://unpkg.com/@babel/standalone@7.14.6/babel.min.js"></script> -->
-  <!-- Your React components and JSX code -->
-  <script type="text/babel" src="src/App.js"></script>
+   <!--Import Babel (optional, for JSX support) -->
+  <script src="https://unpkg.com/@babel/standalone@7.14.6/babel.min.js"></script>
+  <!--Your React components and JSX code -->
 
-  <div class="main-container">
+  <div id="root" class="main-container">
     <div class="jobs-list-and-nav-container">
 
       <div class="jobs-cards-container">
         <!-- This is where the job cards start to appear - number of cards per page: 12 cards -->
-        <!-- <div id="root"></div> -->
+        <nav id="react-job"></nav>
         <!-- This is where the job cards end -->
       </div>
 
@@ -69,15 +67,8 @@
             </ul>
           </div>
         </nav>
-
-
-
-        <!-- <h1>page 1 of 500</h1> -->
       </div>
     </div>
-
-
-
 
     <div class="details-container">
       <div class="scrollable-details-container">
@@ -87,5 +78,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>

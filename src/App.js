@@ -1,6 +1,9 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles.css';
 import './App.css';
+import  '../logos/Tata-Group-logo.png';
+
 
 // Sample job data
 const jobs = [
@@ -98,12 +101,14 @@ function JobCard({ job }) {
 
 // Main App component
 function App() {
+  console.log('Rendering App component'); // Debugging log
+
   return (
     <div className="main-container">
       <div className="jobs-list-and-nav-container">
         <div className="jobs-cards-container">
           {jobs.map(job => {
-            console.log(job); // Add this line
+            console.log('Rendering JobCard for job:', job); // Debugging log
             return <JobCard key={job.id} job={job} />;
           })}
         </div>
@@ -111,6 +116,8 @@ function App() {
     </div>
   );
 }
+
+console.log('Rendering ReactDOM'); // Debugging log
 
 // Render the App component
 ReactDOM.render(<App />, document.getElementById('root'));
