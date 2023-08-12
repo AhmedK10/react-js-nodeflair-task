@@ -9,14 +9,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
-  width: 100%;
+  padding: 70px;
+  /* width: 100%; */
 }
 
 .details-container {
   display: block;
   top: 106px;
-  margin-left: 20px;
   padding: 10px 5px;
   position: sticky;
   flex-grow: 1;
@@ -47,15 +46,60 @@ body {
 
 
 .jobs-list-and-nav-container {
-  width: 440px;
+  width: 500px;
 }
 
+
+
+
+
+
 .pages-nav-container {
-  border: 2px solid black;
-  margin: 20px;
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+  text-align: center;
+}
+
+.pages-number-counter {
+  margin-top: 2px;
+  /* margin-bottom: 2px; */
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.pages-list {
   display: flex;
   justify-content: center;
 }
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.page-item {
+  list-style: none;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #1fc76a;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+
+
+
 
 .jobs-cards-container {
   margin: 20px;
@@ -67,8 +111,10 @@ body {
 
 
 
-
-
+.card-container {
+  padding: 5px;
+  width: 100%;
+}
 
 .job-card {
  /* padding-right: 30px;
@@ -83,7 +129,7 @@ body {
 }
 
 .job-card-top-info {
-  padding: 20px;
+  padding: 20px 12px;
   height: 100%;
   display: flex;
   position: relative;
@@ -145,8 +191,6 @@ body {
   margin-bottom: 2px;
 }
 
-
-/* f */
 
 .job-type-container {
   /* padding-left: 10px;
