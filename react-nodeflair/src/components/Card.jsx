@@ -14,7 +14,7 @@ function Card({ job }) {
 
                     <div className="job-detailed-info-container">
                         <p className="company-name-rating">
-                            <span>{job.company}</span>
+                            <span className="company-name">{job.company}</span>
                             <span>{job.rating} ★</span>
                         </p>
                         <h2>{job.job}</h2>
@@ -44,7 +44,7 @@ function Card({ job }) {
                     </div>
                 </div>
             </div>
-
+            <hr className="hr-line"/>
             <div className="job-card-bot-info">
                 {job.stack.map((tech, index) => (
                     <span key={index} className="techstack-container">{tech}</span>
