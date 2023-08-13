@@ -8,9 +8,9 @@ function App() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+          entry.target.classList.add('animation-show');
         } else {
-          entry.target.classList.remove('show'); // Remove the 'show' class if not intersecting
+          entry.target.classList.remove('animation-show'); // Remove the 'show' class if not intersecting
         }
       });
     });

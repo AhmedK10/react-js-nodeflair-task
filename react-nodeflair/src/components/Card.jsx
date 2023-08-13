@@ -1,30 +1,56 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+
 
 function Card({ job }) {
+  const [isSelected, setIsSelected] = useState(false);
+  const cardRef = useRef(null);
+
+  const handleCardClick = () => {
+    setIsSelected((prevSelected) => !prevSelected);
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Stop observing after showing
+            entry.target.closest('.job-card').classList.add('animation-show');
+          } else {
+            entry.target.closest('.job-card').classList.remove('animation-show');
           }
         });
       },
       { threshold: 0.5 } // Adjust the threshold as needed
     );
 
-    const cardElements = document.querySelectorAll('.card-container');
-    cardElements.forEach((el) => observer.observe(el));
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
 
     return () => {
-      cardElements.forEach((el) => observer.unobserve(el));
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
     };
   }, []);
 
+  useEffect(() => {
+    if (isSelected) {
+      const otherCards = document.querySelectorAll('.job-card');
+      otherCards.forEach((card) => {
+        if (card !== cardRef.current) {
+          card.classList.remove('selected');
+        }
+      });
+    }
+  }, [isSelected]);
+
   return (
     <div className="card-container hidden">
-        <div className="job-card">
+      <div
+        ref={cardRef}
+        onClick={handleCardClick}
+        className={`job-card ${isSelected ? 'selected' : ''}`}>
             <div className="job-card-top-info">
                 <div className="job-info-container">
                     <div className="job-avatar-container">
@@ -70,8 +96,8 @@ function Card({ job }) {
                 ))}
             </div>
         </div>
-    </div>
-);
+      </div>
+  );
 }
 
 export default Card;
