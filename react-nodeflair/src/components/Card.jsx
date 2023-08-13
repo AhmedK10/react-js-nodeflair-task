@@ -1,13 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 
-function Card({ job }) {
-  const [isSelected, setIsSelected] = useState(false);
+function Card({ job, selectedCard, handleCardClick }) {
   const cardRef = useRef(null);
-
-  const handleCardClick = () => {
-    setIsSelected((prevSelected) => !prevSelected);
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,23 +29,13 @@ function Card({ job }) {
     };
   }, []);
 
-  useEffect(() => {
-    if (isSelected) {
-      const otherCards = document.querySelectorAll('.job-card');
-      otherCards.forEach((card) => {
-        if (card !== cardRef.current) {
-          card.classList.remove('selected');
-        }
-      });
-    }
-  }, [isSelected]);
-
   return (
     <div className="card-container hidden">
       <div
         ref={cardRef}
-        onClick={handleCardClick}
-        className={`job-card ${isSelected ? 'selected' : ''}`}>
+        onClick={() => handleCardClick(job.id)}
+        className={`job-card ${selectedCard === job.id ? 'selected' : 'deselected'}`}
+      >
             <div className="job-card-top-info">
                 <div className="job-info-container">
                     <div className="job-avatar-container">
