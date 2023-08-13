@@ -125,7 +125,17 @@ body {
   background-color: #f0f0f0; /* Darker background color on hover */
 }
 
+.selectedpage {
+  font-weight: bold;
+  color: white;
+  background-color: #1fc76a;
+}
 
+.selectedpage:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #1fc76a;
+}
 
 
 

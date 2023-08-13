@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-
-function Card({ job, selectedCard, handleCardClick }) {
+function Card({ job, isSelected, handleCardClick }) {
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -15,7 +14,7 @@ function Card({ job, selectedCard, handleCardClick }) {
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 }
     );
 
     if (cardRef.current) {
@@ -33,8 +32,8 @@ function Card({ job, selectedCard, handleCardClick }) {
     <div className="card-container hidden">
       <div
         ref={cardRef}
-        onClick={() => handleCardClick(job.id)}
-        className={`job-card ${selectedCard === job.id ? 'selected' : 'deselected'}`}
+        onClick={() => handleCardClick(job.id, job)}
+        className={`job-card ${isSelected ? 'selected' : 'deselected'}`}
       >
             <div className="job-card-top-info">
                 <div className="job-info-container">

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import Card from './components/Card';
 import { Jobs } from './components/Object';
+import JobDetails from './components/JobDetails'; // Import the JobDetails component
 
 function App() {
   const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedJob, setSelectedJob] = useState(null); // Add selectedJob state
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -26,20 +27,30 @@ function App() {
     };
   }, []);
 
-  const handleCardClick = (id) => {
+  const handleCardClick = (id, job) => {
     setSelectedCard(id);
+    setSelectedJob(job); // Set the selected job
   };
 
   return (
-    <div className="jobs-cards-container">
-      {Jobs.map((job) => (
-        <Card
-          key={job.id}
-          job={job}
-          selectedCard={selectedCard}
-          handleCardClick={handleCardClick}
-        />
-      ))}
+    <div>
+      <div className="jobs-cards-container">
+        {Jobs.map((job) => (
+          <Card
+            key={job.id}
+            job={job}
+            isSelected={selectedCard === job.id}
+            handleCardClick={handleCardClick}
+          />
+        ))}
+      </div>
+      <div className="details-container">
+        <div className="scrollable-details-container">
+          <div className="details-job-title">
+            <JobDetails selectedJob={selectedJob} /> {/* Pass the selected job to JobDetails */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

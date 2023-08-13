@@ -23,8 +23,8 @@
             </div>
             <div class="pages-list">
               <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Go to page number 1">1</a>
+                <li class="page-item selectedpage">
+                  <a class="page-link selectedpage" href="#" aria-label="Go to page number 1">1</a>
                 </li>
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Go to page number 2">2</a>
@@ -52,10 +52,11 @@
       <div class="details-container">
         <div class="scrollable-details-container">
           <div class="details-job-title">
-            <h1 id="selectedJobTitle">Job Title</h1>
+            <div id="jobDetailsRoot"></div> <!-- Render the JobDetails component here -->
           </div>
         </div>
       </div>
     </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
-</html>
+  </html>
