@@ -1,9 +1,29 @@
-import React from "react";
-
+import React, { useEffect } from 'react';
 
 function Card({ job }) {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // Stop observing after showing
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    const cardElements = document.querySelectorAll('.card-container');
+    cardElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      cardElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
-    <div className="card-container">
+    <div className="card-container hidden">
         <div className="job-card">
             <div className="job-card-top-info">
                 <div className="job-info-container">
