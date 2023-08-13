@@ -6,7 +6,6 @@ import { Jobs } from "./components/Object";
 // const jobs = Jobs();
 
 function App() {
-
   return (
         <div className="jobs-cards-container">
           {Jobs.map(job => {
