@@ -9,7 +9,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '/images/shopee.svg'
+          logo: 'https://i.ibb.co/2NCd3pb/shopee.jpg'
       },
       {
           id: 2,
@@ -21,7 +21,7 @@ export const Jobs = [
           loc: 'Japan',
           salary: 'S$6500 - S$10000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '/images/tiktok.png'
+          logo: 'https://i.ibb.co/jZds9s6/tiktok.png'
       },
       {
           id: 3,
@@ -33,7 +33,7 @@ export const Jobs = [
           loc: 'Thailand',
           salary: 'S$5000 - S$7500 / mth',
           stack: ['C', 'JavaScript', 'Figma', 'React'],
-          logo: '/images/accenture.png'
+          logo: 'https://i.ibb.co/8b10mbX/accenture.jpg'
       },
       {
           id: 4,
@@ -45,7 +45,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$7500 - S$10000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '/images/tiktok.png'
+          logo: 'https://i.ibb.co/jZds9s6/tiktok.png'
       },
       {
           id: 5,
@@ -57,7 +57,7 @@ export const Jobs = [
           loc: 'Japan',
           salary: 'S$6500 - S$9000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '/images/bytedance.png'
+          logo: 'https://i.ibb.co/W52jjxv/bytedance.jpg'
       },
       {
           id: 6,
@@ -69,7 +69,7 @@ export const Jobs = [
           loc: 'Japan',
           salary: 'S$7500 - S$10000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '/images/tiktok.png'
+          logo: 'https://i.ibb.co/jZds9s6/tiktok.png'
       },
       {
           id: 7,
@@ -81,7 +81,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6500 - S$7500 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '/images/govtech.png'
+          logo: 'https://i.ibb.co/jg3dpM0/govtech.png'
       },
       {
           id: 8,
@@ -93,7 +93,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$3000 - S$9000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '/images/shopee.jpg'
+          logo: 'https://i.ibb.co/2NCd3pb/shopee.jpg'
       },
       {
           id: 9,
@@ -105,7 +105,7 @@ export const Jobs = [
           loc: 'Thailand',
           salary: 'S$4000 - S$5000 / mth',
           stack: ['C', 'JavaScript', 'Java', 'MATLAB'],
-          logo: '/images/manulife.png'
+          logo: 'https://i.ibb.co/4mdNcBj/manulife.jpg'
       },
       {
           id: 10,
@@ -117,7 +117,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '/images/shopee.jpg'
+          logo: 'https://i.ibb.co/2NCd3pb/shopee.jpg'
       },
       {
           id: 11,
@@ -129,7 +129,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '/images/singtel.png'
+          logo: 'https://i.ibb.co/Jd6jvSc/singtel.png'
       },
       {
           id: 12,
@@ -141,6 +141,6 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6500 - S$7500 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '/images/govtech.png'
+          logo: 'https://i.ibb.co/jg3dpM0/govtech.png'
       }
     ];
