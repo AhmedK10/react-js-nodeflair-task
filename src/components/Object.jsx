@@ -9,7 +9,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/shopee.jpg'
+          logo: '/logos/shopee.jpg'
       },
       {
           id: 2,
@@ -21,7 +21,7 @@ export const Jobs = [
           loc: 'Japan',
           salary: 'S$6500 - S$10000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '../../logos/tiktok.png'
+          logo: '/logos/tiktok.png'
       },
       {
           id: 3,
@@ -33,7 +33,7 @@ export const Jobs = [
           loc: 'Thailand',
           salary: 'S$5000 - S$7500 / mth',
           stack: ['C', 'JavaScript', 'Figma', 'React'],
-          logo: '../../logos/accenture.png'
+          logo: '/logos/accenture.png'
       },
       {
           id: 4,
@@ -45,7 +45,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$7500 - S$10000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '../../logos/tiktok.png'
+          logo: '/logos/tiktok.png'
       },
       {
           id: 5,
@@ -57,7 +57,7 @@ export const Jobs = [
           loc: 'Japan',
           salary: 'S$6500 - S$9000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '../../logos/bytedance.png'
+          logo: '/logos/bytedance.png'
       },
       {
           id: 6,
@@ -69,7 +69,7 @@ export const Jobs = [
           loc: 'Japan',
           salary: 'S$7500 - S$10000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '../../logos/tiktok.png'
+          logo: '/logos/tiktok.png'
       },
       {
           id: 7,
@@ -81,7 +81,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6500 - S$7500 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/govtech.png'
+          logo: '/logos/govtech.png'
       },
       {
           id: 8,
@@ -93,7 +93,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$3000 - S$9000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/shopee.jpg'
+          logo: '/logos/shopee.jpg'
       },
       {
           id: 9,
@@ -105,7 +105,7 @@ export const Jobs = [
           loc: 'Thailand',
           salary: 'S$4000 - S$5000 / mth',
           stack: ['C', 'JavaScript', 'Java', 'MATLAB'],
-          logo: '../../logos/manulife.png'
+          logo: '/logos/manulife.png'
       },
       {
           id: 10,
@@ -117,7 +117,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/shopee.jpg'
+          logo: '/logos/shopee.jpg'
       },
       {
           id: 11,
@@ -129,7 +129,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
-          logo: '../../logos/singtel.png'
+          logo: '/logos/singtel.png'
       },
       {
           id: 12,
@@ -141,6 +141,6 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6500 - S$7500 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/govtech.png'
+          logo: '/logos/govtech.png'
       }
     ];
