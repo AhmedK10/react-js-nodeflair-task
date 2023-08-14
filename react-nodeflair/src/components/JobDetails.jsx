@@ -2,13 +2,12 @@ import React from 'react';
 
 function JobDetails({ selectedJob }) {
   if (!selectedJob) {
-    return <p>Select a job to see details</p>;
+    return <h1>Select a job to see job title</h1>;
   }
 
   return (
     <div>
-      <h1>{selectedJob.job}</h1> {/* Change <h1> to <h2> */}
-      {/* ... Display other job details ... */}
+      <h1>{selectedJob.job}</h1>
     </div>
   );
 }

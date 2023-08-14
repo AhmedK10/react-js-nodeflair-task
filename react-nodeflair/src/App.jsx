@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
 import { Jobs } from './components/Object';
-import JobDetails from './components/JobDetails'; // Import the JobDetails component
+import JobDetails from './components/JobDetails';
 
 function App() {
   const [selectedCard, setSelectedCard] = useState(null);
-  const [selectedJob, setSelectedJob] = useState(null); // Add selectedJob state
+  const [selectedJob, setSelectedJob] = useState(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -21,7 +21,6 @@ function App() {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 
-    // Cleanup the observer when component unmounts
     return () => {
       hiddenElements.forEach((el) => observer.unobserve(el));
     };
@@ -29,7 +28,7 @@ function App() {
 
   const handleCardClick = (id, job) => {
     setSelectedCard(id);
-    setSelectedJob(job); // Set the selected job
+    setSelectedJob(job);
   };
 
   return (
@@ -46,13 +45,42 @@ function App() {
           ))}
         </div>
         <div className="pages-nav-container">
-          {/* ... Pagination and other components */}
+        <nav>
+            <div className="pages-number-counter">
+              <span>Page <b>1</b> of <b>500</b></span>
+            </div>
+            <div className="pages-list">
+              <ul className="pagination">
+                <li className="page-item selectedpage">
+                  <a className="page-link selectedpage" href="#" aria-label="Go to page number 1">1</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Go to page number 2">2</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Go to page number 3">3</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Go to page number 4">4</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Go to page number 5">5</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Go to next page">⟩</a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Go to last page">»</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
       <div className="details-container">
         <div className="scrollable-details-container">
           <div className="details-job-title">
-            <JobDetails selectedJob={selectedJob} /> {/* Pass the selected job to JobDetails */}
+            <JobDetails selectedJob={selectedJob} />
           </div>
         </div>
       </div>

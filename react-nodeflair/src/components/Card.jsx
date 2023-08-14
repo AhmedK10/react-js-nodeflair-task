@@ -40,7 +40,6 @@ function Card({ job, isSelected, handleCardClick }) {
                     <div className="job-avatar-container">
                         <img className="company-avatar" src={job.logo} alt="Company Logo" />
                     </div>
-
                     <div className="job-detailed-info-container">
                         <p className="company-name-rating">
                             <span className="company-name">{job.company}</span>
@@ -48,12 +47,10 @@ function Card({ job, isSelected, handleCardClick }) {
                         </p>
                         <h2>{job.job}</h2>
                     </div>
-
                     <div className="job-type-container">
                         <div className="job-type">{job.type}</div>
                     </div>
                 </div>
-
                 <div className="job-time-loc-salary-info">
                     <div className="job-time-loc">
                         <span className="time-post">{job.time}</span>
@@ -64,7 +61,6 @@ function Card({ job, isSelected, handleCardClick }) {
                             {job.loc}
                         </div>
                     </div>
-
                     <div>
                         <p className="job-salary">
                             <span className="salary">{job.salary}</span>
