@@ -77,7 +77,7 @@ function App() {
           </nav>
         </div>
       </div>
-      <div className="details-container">
+      <div className={`details-container ${selectedJob ? 'show' : ''}`}>
         <div className="scrollable-details-container">
           <div className="details-job-title">
             <JobDetails selectedJob={selectedJob} />

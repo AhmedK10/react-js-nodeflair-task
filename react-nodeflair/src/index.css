@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .jobs-cards-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .details-container {
+    display: none;
+    visibility: hidden; /* Hide job details on mobile */
+    transition: visibility 0.3s ease;
+  }
+
+  .details-container.show {
+    display: block;
+    visibility: visible; /* Show job details when active */
+  }
+
+  .scrollable-details-container {
+    max-height: calc(100vh - 150px); /* Adjust to fit the screen minus header/footer heights */
+    overflow-y: auto;
+  }
+}
+
+
 body {
   background: #f3f2ef;
   flex-direction: column;
