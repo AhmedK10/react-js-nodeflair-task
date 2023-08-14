@@ -11,6 +11,10 @@
     height: auto;
   }
 
+  .show {
+    transform: translateY(0);
+  }
+
   .jobs-cards-container {
     width: 100%;
     margin-top: 20px;
@@ -18,17 +22,22 @@
 
   .details-container {
     display: none;
-    visibility: hidden; /* Hide job details on mobile */
+    visibility: hidden;
     transition: visibility 0.3s ease;
   }
 
   .details-container.show {
-    display: block;
-    visibility: visible; /* Show job details when active */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
   }
 
   .scrollable-details-container {
-    max-height: calc(100vh - 150px); /* Adjust to fit the screen minus header/footer heights */
+    max-height: calc(100vh - 150px);
     overflow-y: auto;
   }
 }
