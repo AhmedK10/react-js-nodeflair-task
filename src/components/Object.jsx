@@ -9,7 +9,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/shopee.png'
+          logo: '../../logos/shopee.jpg'
       },
       {
           id: 2,
@@ -93,7 +93,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$3000 - S$9000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/shopee.png'
+          logo: '../../logos/shopee.jpg'
       },
       {
           id: 9,
@@ -117,7 +117,7 @@ export const Jobs = [
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
           stack: ['C++', 'Python', 'Java'],
-          logo: '../../logos/shopee.png'
+          logo: '../../logos/shopee.jpg'
       },
       {
           id: 11,
