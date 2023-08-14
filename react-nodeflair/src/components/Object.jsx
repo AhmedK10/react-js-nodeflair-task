@@ -22,7 +22,7 @@ export const Jobs = [
           time: '20 days ago',
           loc: 'Japan',
           salary: 'S$6500 - S$10000 / mth',
-          stack: ['C++', 'C', 'JavaScript', 'Java', 'MATLAB', 'Python', 'Java'],
+          stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
           logo: '../../logos/tiktok.png'
       },
       {
@@ -46,7 +46,7 @@ export const Jobs = [
           time: '20 minutes ago',
           loc: 'Singapore',
           salary: 'S$7500 - S$10000 / mth',
-          stack: ['C++', 'C', 'JavaScript', 'Java', 'MATLAB', 'Python', 'Java'],
+          stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
           logo: '../../logos/tiktok.png'
       },
       {
@@ -58,7 +58,7 @@ export const Jobs = [
           time: '55 minutes ago',
           loc: 'Japan',
           salary: 'S$6500 - S$9000 / mth',
-          stack: ['C++', 'C', 'JavaScript', 'Java', 'MATLAB', 'Python', 'Java'],
+          stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
           logo: '../../logos/bytedance.png'
       },
       {
@@ -70,7 +70,7 @@ export const Jobs = [
           time: '40 minutes ago',
           loc: 'Japan',
           salary: 'S$7500 - S$10000 / mth',
-          stack: ['C++', 'C', 'JavaScript', 'Java', 'MATLAB', 'Python', 'Java'],
+          stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
           logo: '../../logos/tiktok.png'
       },
       {
@@ -130,7 +130,7 @@ export const Jobs = [
           time: '20 minutes ago',
           loc: 'Singapore',
           salary: 'S$6000 - S$7000 / mth',
-          stack: ['C++', 'C', 'JavaScript', 'Java', 'MATLAB', 'Python', 'Java'],
+          stack: ['C++', 'C', 'JavaScript', 'Ruby', 'MATLAB', 'Python', 'Java', 'React'],
           logo: '../../logos/singtel.png'
       },
       {

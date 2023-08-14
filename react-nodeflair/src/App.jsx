@@ -33,16 +33,21 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="jobs-cards-container">
-        {Jobs.map((job) => (
-          <Card
-            key={job.id}
-            job={job}
-            isSelected={selectedCard === job.id}
-            handleCardClick={handleCardClick}
-          />
-        ))}
+    <div className="main-container">
+      <div className="jobs-list-and-nav-container">
+        <div className="jobs-cards-container">
+          {Jobs.map((job) => (
+            <Card
+              key={job.id}
+              job={job}
+              isSelected={selectedCard === job.id}
+              handleCardClick={handleCardClick}
+            />
+          ))}
+        </div>
+        <div className="pages-nav-container">
+          {/* ... Pagination and other components */}
+        </div>
       </div>
       <div className="details-container">
         <div className="scrollable-details-container">
