@@ -2,7 +2,7 @@
 
 This is a UI for an existing site from the webpage of NodeFlair: https://nodeflair.com/jobs.
 
-The Ui was built using:
+The UI was built using:
 - React
 - JavaScript
 - HTML
