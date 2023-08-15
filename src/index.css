@@ -3,6 +3,14 @@
 
 /* Media query for smaller screens (mobile) */
 @media (max-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-left: 25px;
+  }
+
   .main-container {
     flex-direction: column;
     align-items: center;
@@ -70,7 +78,6 @@ body {
 }
 
 .details-container {
-  display: block;
   font-weight: bold;
   top: 106px;
   padding: 10px 5px;
@@ -335,6 +342,7 @@ body {
   min-height: 40px;
   bottom: 0;
   margin-left: 30px;
+  margin-right: 10px;
 }
 
 .techstack-container {
