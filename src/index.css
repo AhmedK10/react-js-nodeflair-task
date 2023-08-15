@@ -13,6 +13,14 @@
     height: auto;
   }
 
+
+  .jobs-list-and-nav-container {
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+  }
+
   .show {
     transform: translateY(0);
   }
@@ -107,7 +115,6 @@ body {
   /* width: 500px; */
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
 }
 
 .jobs-cards-container {
