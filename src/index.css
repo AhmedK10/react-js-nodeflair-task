@@ -15,10 +15,10 @@
 
 
   .jobs-list-and-nav-container {
-    width: 100%; /* Full width */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center;
   }
 
   .show {
@@ -58,9 +58,7 @@ body {
   flex-direction: column;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   align-items: center;
-
   width: 100%;
-
 }
 
 .hidden {
@@ -112,7 +110,6 @@ body {
 }
 
 .jobs-list-and-nav-container {
-  /* width: 500px; */
   display: flex;
   flex-direction: column;
 }
