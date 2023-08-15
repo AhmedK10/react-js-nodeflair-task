@@ -34,9 +34,6 @@ function Card({ job, isSelected, handleCardClick }) {
         ref={cardRef}
         onClick={() => handleCardClick(job.id, job)}
         className={`job-card ${isSelected ? 'selected' : 'deselected'}`}
-        style={{
-          transform: 'translateX(0)',
-        }}
       >
             <div className="job-card-top-info">
                 <div className="job-info-container">
