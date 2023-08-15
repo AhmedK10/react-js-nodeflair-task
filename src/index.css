@@ -7,9 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     width: 100%;
-    margin: 0;
   }
 
   .main-container {
@@ -73,7 +71,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 70px;
 }
 
 .details-container {
@@ -105,7 +102,6 @@ body {
 }
 
 .jobs-list-and-nav-container {
-  width: 500px;
   display: flex;
   flex-direction: column;
 }
