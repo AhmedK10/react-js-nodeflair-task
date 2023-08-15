@@ -104,7 +104,7 @@ body {
 }
 
 .jobs-list-and-nav-container {
-  width: 500px;
+  /* width: 500px; */
   display: flex;
   flex-direction: column;
 }
