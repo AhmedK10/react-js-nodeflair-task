@@ -81,6 +81,7 @@ body {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
 
 .main-container {
