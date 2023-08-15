@@ -2,13 +2,21 @@
 
 
 /* Media query for smaller screens (mobile) */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }
+
   .main-container {
     flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
-    height: auto;
   }
 
   .show {
@@ -24,6 +32,7 @@
     display: none;
     visibility: hidden;
     transition: visibility 0.3s ease;
+    box-sizing: border-box;
   }
 
   .details-container.show {
@@ -70,7 +79,6 @@ body {
 }
 
 .details-container {
-  display: block;
   font-weight: bold;
   top: 106px;
   padding: 10px 5px;
